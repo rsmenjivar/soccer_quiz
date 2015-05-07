@@ -3,27 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="css/style.css" type="text/css" rel="stylesheet">
-	<script src="app.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="app.js"></script>
 	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 	<title>Soccer Quiz</title>
 </head>
 <body>
 	<h1>Soccer Quiz</h1>
-	<div class="questions-box">
-		<p class="question">Question #1: Which European Team has won the most Champions League Titles?</p>
+	<div id="questions-box" class="questions-box">
+		<p class="question"></p>
 	</div>
-	<div class="answers-box">
-		<p><input type="radio"><span class="answer">Bayern Munich</span></p>
-		<p><input type="radio"><span class="answer">Barcelona</span></p>
-		<p><input type="radio"><span class="answer">Real Madrid</span></p>
-		<p><input type="radio"><span class="answer">AC Milan</span></p>
+	<div id="answers-box" class="answers-box">
+		<label id="answer-1"><input type="radio" name="radio"><span class="answer"></span></label>
+		<label id="answer-2"><input type="radio" name="radio"><span class="answer"></span></label>
+		<p><input type="radio" name="radio"><span class="answer"></span></p>
+		<p><input type="radio" name="radio"><span class="answer"></span></p>
 	</div>
 	<div class="button">
-		<input type="button" id="submit" value="Submit">
-		<input type="button" id="retry" value="Retry">
+		<button id="submit">Submit</button>
+		<button id="retry">Retry</button>
 	</div>
 </body>
 </html>
